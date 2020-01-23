@@ -1,0 +1,737 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style-materia.css">
+      <title>2020 - Retorno à Essência</title>
+    </head>
+    <style>
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+      }
+      .view .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: #0000006b;
+      }
+    </style>
+    <body>
+        <!--
+        ********************************************************************************************************
+        -------------------------------------------INICIO DO TEMPLATE-------------------------------------------
+        ********************************************************************************************************
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:600&display=swap" rel="stylesheet">
+        <style>
+        section {
+          padding: 100px 0;
+        }
+        html, body {
+          overflow-x: hidden;
+        }
+        body {
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          background-color: #252525;
+        }
+        h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 200%;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 400;
+        }
+        h2 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.6rem;
+        }
+
+        .timeline-header {
+          background: #1c1c1b;
+          color: #FFFFFF;
+          padding: 150px 0;
+        }
+        .timeline-header p {
+          font-family: 'Allura';
+          color: rgba(255, 255, 255, 0.2);
+          margin-bottom: 0;
+          font-size: 60px;
+          margin-top: -30px;
+        }
+
+        .timeline {
+          position: relative;
+        }
+        .timeline::before {
+          content: '';
+          background: #ff75004f;
+          width: 5px;
+          height: 95%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50px;
+        }
+
+        .timeline-item {
+          width: 100%;
+          margin-bottom: 70px;
+        }
+        .timeline-item:nth-child(even) .timeline-content {
+          float: right;
+          padding: 40px 30px 10px 30px;
+        }
+        .timeline-item:nth-child(even) .timeline-content .date {
+          right: auto;
+          left: 0;
+        }
+        .timeline-item:nth-child(even) .timeline-content::after {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          width: 0;
+          height: 0;
+          top: 30px;
+          left: -15px;
+          border-width: 10px 15px 10px 0;
+          border-color: transparent #ff7500 transparent transparent;
+        }
+        .timeline-item::after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+
+        .timeline-content {
+          position: relative;
+          width: 45%;
+          padding: 10px 30px;
+          border-radius: 4px;
+          background: #f5f5f5;
+          box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+        }
+        .timeline-content::after {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          width: 0;
+          height: 0;
+          top: 30px;
+          right: -15px;
+          border-width: 10px 0 10px 15px;
+          border-color: transparent transparent transparent #ff7500;
+        }
+
+        .timeline-img {
+          width: 30px;
+          height: 30px;
+          background: #1c1c1b;
+          border-radius: 50%;
+          position: absolute;
+          left: 50%;
+          margin-top: 25px;
+          margin-left: -15px;
+        }
+
+        .timeline a {
+          background: #ff7500;
+          color: #FFFFFF;
+          padding: 8px 20px;
+          text-transform: uppercase;
+          font-size: 14px;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          display: inline-block;
+          border-radius: 2px;
+          box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+        }
+        .timeline a:hover,.timeline a:active,.timeline a:focus {
+          background: #1c1c1b;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+
+        .timeline a:focus{
+          box-shadow:0 0 0 0.2rem #ff750050;
+        }
+
+        .timeline-card {
+          padding: 0 !important;
+        }
+        .timeline-card p {
+          padding: 0 20px;
+        }
+        .timeline-card a {
+          margin-left: 20px;
+        }
+
+        .timeline-item .timeline-img-header {
+          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+          background-size: cover;
+        }
+
+        .timeline-img-header {
+          height: 250px;
+          position: relative;
+          margin-bottom: 20px;
+        }
+        .timeline-img-header h2 {
+          color: #FFFFFF;
+          position: absolute;
+          bottom: 5px;
+          left: 20px;
+        }
+
+        blockquote {
+          margin-top: 30px;
+          color: #757575;
+          border-left-color: #1c1c1b;
+          padding: 0 20px;
+        }
+
+        .date {
+          background: #ff7500;
+          display: inline-block;
+          color: #FFFFFF;
+          padding: 10px;
+          position: absolute;
+          top: 17px;
+          right: 0;
+        }
+        .lead{
+          color: #fff;
+          font-weight: 400;
+          font-size: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          .timeline::before {
+            left: 50px;
+          }
+          .timeline .timeline-img {
+            left: 50px;
+          }
+          .timeline .timeline-content {
+            max-width: 100%;
+            width: auto;
+            margin-left: 70px;
+          }
+          .timeline .timeline-item:nth-child(even) .timeline-content {
+            float: none;
+          }
+          .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent #ff7500 transparent transparent;
+          }
+        }
+
+        </style>
+        <header>
+          <div class="container-fluid text-center" style="background:#383635 url(https://i.ibb.co/Jm2n90L/YOUTUBE-KITPrancheta-1.png)no-repeat center center/cover; padding:10em 0">
+          </div>
+        </header>
+        <main role="main" class=" container text-center inner cover mt-5 pt-5">
+          <h1 class="cover-heading" style="color: #ff7500;">2020 é o ano  de retornar à Essência</h1>
+          <p class="lead">Aqui você vai encontrar todo conteúdo relacionado ao tema do ano e as ênfases de cada mês disponibilizados pela nossa igreja. Portanto prossigamos para o alvo, pelo prêmio da soberana vocação de Deus em Cristo Jesus. Filipenses 3:14</p>
+        </main>
+
+        <!-- 1 ARREPENDIMENTO -->
+        <div class="modal fade" id="jan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Arrependimento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OwqZ-GDdMT4"></iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+          1 ARREPENDIMENTO
+        -->
+        <section class="timeline">
+          <div class="container">
+            <div class="timeline-item">
+              <div class="timeline-img" style="    background: #ff7500;"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/ZJp9zK8/1-ARREPENDIMENTO.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Arrependimento</h2>
+                </div>
+                <div class="date">5 JAN 2020</div>
+                <p>“Produzi, pois, frutos dignos de arrependimento.”<br>(Mateus 3:8)<br>#retornoaessencia</p>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                    <a href="javascript:void(0)" type="button" class="btn bnt-more" data-toggle="modal" data-target="#jan">Minuto da visão</a>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                    <a href="https://s3-sa-east-1.amazonaws.com/inradar.media/uploads/download/None/download-a5e26fb60dc344efeeb6a6fc18c99903.pdf" class="btn bnt-more" target="blank">Download PDF</a>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/watch?v=-rJsJLvlSDY" class="btn bnt-more" target="blank">Filme sugerido</a>
+                  </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão: Ênfase Arrependimento<small> (Pr. Felipe Freitas)</small></li>
+                  <li class="list-group-item">Leitura: Arrependimento para Vida C.H Spurgeon</li>
+                  <li class="list-group-item">Sugestão de Filme: Deixados pra trás</li>
+                </ul>
+                <div class="card-body">
+                  <span class="badge badge-pill badge-secondary">Download pdf gratuito</span>
+                </div>
+              </div>
+            </div>
+            <!-- 
+            2 SACRIFÍCIO
+          -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/zVFHZnR/2-SACRIF-CIO.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Sacrifício</h2>
+                </div>
+                <div class="date">2 FEV 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            3 SANTIDADE
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/PgPNGrD/3-SANTIDADE.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Santidade</h2>
+                </div>
+                <div class="date">1 MAR 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            4 HUMILDADE
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/fMz95nf/4-HUMILDADE.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Humildade</h2>
+                </div>
+                <div class="date">5 ABR 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                    <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                  </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            5 SABEDORIA
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/MVXnjYr/5-SABEDORIA.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Sabedoria</h2>
+                </div>
+                <div class="date">3 MAI 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            6 INTIMIDADE
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/G7S1TGB/6-INTIMIDADE.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Intimidade</h2>
+                </div>
+                <div class="date">7 JUN 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            7 FE
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/0tJwkDd/7-F.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Fé</h2>
+                </div>
+                <div class="date">5 JUL 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            8 JUSTIÇA
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/S7rbRjw/8-JUSTI-A.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Justiça</h2>
+                </div>
+                <div class="date">2 AGO 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            9 AMOR
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/Fx22vWY/9-AMOR.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Amor</h2>
+                </div>
+                <div class="date">6 SET 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            10 COMUNHÃO
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/PWSwPw2/10-COMUNH-O.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Comunhão</h2>
+                </div>
+                <div class="date">4 OUT 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            11 FIDELIDADE
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/kQxkcYj/11-FIDELIDADE.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Fidelidade</h2>
+                </div>
+                <div class="date">1 NOV 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <!-- 
+            12 HONRA
+            -->
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/0VYBJd2/12-HONRA.jpg) center center no-repeat;
+                background-size: cover;">
+                  <h2>Honra</h2>
+                </div>
+                <div class="date">6 DEZ 2020</div>
+                <p>EM BREVE</p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fab fa-youtube"></i></a>
+                  <!-- LEMBRE DE AJUSTAR O DATA TARGET PARA LINKAR A MODAL CORRETA -->
+                  <a href="javascript:void(0)" type="button" class="btn bnt-more disabled" data-toggle="modal" data-target="#fev">Minuto da visão</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                  <a href="javascript:void(0)" type="button" class="btn disabled"><i class="fas fa-file-pdf"></i></a>
+                  <!-- LEMBRE DE LEMBRE DE HOSPEDAR O ARQUIVO NO SITE E COLAR A URL AQUI -->
+                  <a href="javascript:void(0)" class="btn bnt-more disabled" target="blank">Download PDF</a>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Minuto da visão:<small> (EM BREVE)</small></li>
+                  <li class="list-group-item">Leitura:<small> (EM BREVE)</small></li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!--
+         *******************************************************************************************************
+         -------------------------------------------FINAL DO TEMPLATE-------------------------------------------
+         *******************************************************************************************************
+         -->
+         <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/datatables-select.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/datatables.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/imagesloaded.pkgd.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/jquery.zmd.hierarchical-display.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/masonry.pkgd.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/progressBar.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons/rating.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons-pro/chat.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons-pro/multi-range.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons-pro/stepper.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons-pro/steppers.min.js"></script>
+         <script src="http://bemmaistv.com.br/src/js/addons-pro/timeline.min.js"></script>
+
+         <script>
+          $(function(){
+          
+          window.sr = ScrollReveal();
+          
+          if ($(window).width() < 768) {
+          
+            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+              $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+            }
+          
+            sr.reveal('.js--fadeInRight', {
+              origin: 'right',
+              distance: '300px',
+              easing: 'ease-in-out',
+              duration: 800,
+            });
+          
+          } else {
+            
+            sr.reveal('.js--fadeInLeft', {
+              origin: 'left',
+              distance: '300px',
+              easing: 'ease-in-out',
+              duration: 800,
+            });
+          
+            sr.reveal('.js--fadeInRight', {
+              origin: 'right',
+              distance: '300px',
+              easing: 'ease-in-out',
+              duration: 800,
+            });
+          
+          }
+          
+          sr.reveal('.js--fadeInLeft', {
+              origin: 'left',
+              distance: '300px',
+              easing: 'ease-in-out',
+              duration: 800,
+            });
+          
+            sr.reveal('.js--fadeInRight', {
+              origin: 'right',
+              distance: '300px',
+              easing: 'ease-in-out',
+              duration: 800,
+            });
+          
+          
+          });
+          
+          </script>
+      </body>
+   </html>
