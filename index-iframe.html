@@ -1,0 +1,104 @@
+
+<style>
+  .bod
+    {
+    width:50px;
+    background-color:#fff;
+    border-radius:40px;
+    border: 1px solid #ccc;
+    transition: ease-in-out, transform 1s,box-shadow 1s;
+    }
+  
+    .bod > .social{margin:0;}
+    .bod > .social > a{
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    :hover.bod {
+    transform: translateZ(50px) translateX(5px) translateY(5px);
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  
+  
+    iframe#ifrm{
+    width: 100%;
+    border:0px solid red;
+    height:6830px;
+    }
+  
+    @media (min-width: 576px) {
+      iframe#ifrm{
+  border:0px solid orangered;
+  height:6150px;
+      }
+    }
+  
+    @media (min-width: 768px) {
+      iframe#ifrm{
+        border:0px solid pink;
+        height:6330px;
+      }
+    }
+  
+    @media (min-width: 800px) {
+      iframe#ifrm{
+        border:0px solid orange;
+        height:5730px;
+      }
+    }
+  
+    @media (min-width: 991px) {
+      iframe#ifrm{
+        border:0px solid yellow;
+        height:5730px;
+      }
+    }
+  
+    @media (min-width: 1030px) {
+      iframe#ifrm{
+        border:0px solid yellowgreen;
+        height:5000px;
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      iframe#ifrm{
+        border:0px solid green;
+        height:5000px;
+      }
+    }
+  
+    @media (min-width: 1232px) {
+      iframe#ifrm{
+        border:0px solid blue;
+        height:4870px;
+      }
+    }
+  
+  
+  #page.container{
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      border: 0;
+    }
+  .page-section{padding:0px;}
+  </style>
+  <!-- Scrollmagic Pinning Elements
+  -->
+    <div class="spacer s0"></div>
+    <div style="padding:0;z-index:10000;position:fixed;top:calc(50% - 110px);height: 0;margin: 0 0 0 20px;">
+      <div class="bod">
+        <div class="social text-center">
+          <a href="https://www.youtube.com/user/ibcbarra" target="blank"><i class="fa fa-youtube fa-lg" style="color: #ff7500"></i></a>
+          <a href="https://www.instagram.com/ibatitude/" target="blank"><i class="fa fa-instagram fa-lg" style="color: #ff7500"></i></a>
+          <a href="https://pt-br.facebook.com/Ibatitude/" target="blank"><i class="fa fa-facebook-f fa-lg" style="color: #ff7500"></i></a>
+          <a href="https://twitter.com/ibatitude" target="blank"><i class="fa fa-twitter fa-lg" style="color: #ff7500"></i></a>
+        </div>
+      </div>
+    </div>
+    <iframe id="ifrm" src="https://wallace2anjos.github.io/atitude-barradatijuca/"></iframe>
