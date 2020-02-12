@@ -1,0 +1,59 @@
+
+/* General
+   ========================================================================== */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.wrapper {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.wrapper.scrollbar-dynamic {
+    max-height: none;
+}
+.page-content {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 25px;
+}
+.content .demo {
+	padding: 25px;
+}
+/** Custom page styles **/
+.content {
+    max-width: 1200px;
+}
+.content .demo {
+    border: 1px solid #CCC;
+}
+.content .demo .inner-content {
+    border: 1px solid #CCC;
+    max-height: 170px;
+    width: 600px;
+}
+.content .demo > div {
+    max-height: 250px;
+    overflow: auto;
+}
+.content .demo .permanent {
+    min-width: 800px;
+}
+.controls {
+    padding: 0 0 10px;
+}
+.controls span {
+    cursor: pointer; padding: 2px 8px;
+}
+.controls span.active {
+    background: #4698CE;
+    color: #fff;
+    cursor: default;
+}
+.prettyprint ol.linenums > li {
+    list-style-type: decimal;
+}
+#lorem-ipsum {
+    display: none;
+}
