@@ -26,4 +26,12 @@
     }
   .page-section{padding:0px;margin: 0;}
   </style>
-    <iframe id="ifrm" src="https://wallace2anjos.github.io/atitude-barradatijuca/"></iframe>
+  <script>function getDocHeight(doc) {
+    doc = doc || document;
+    // stackoverflow.com/questions/1145850/
+    var body = doc.body, html = doc.documentElement;
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+        html.clientHeight, html.scrollHeight, html.offsetHeight );
+    return height;
+}</script>
+    <iframe id="ifrm" src="https://wallace2anjos.github.io/atitude-barradatijuca/" onload="setIframeHeight(this.id)"></iframe>
