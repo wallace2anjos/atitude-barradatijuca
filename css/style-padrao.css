@@ -1,11 +1,12 @@
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
   background-color: #1c1c1b;
   color: #fff;
-  overflow: hidden;
+  
 }
 
 .mask {
