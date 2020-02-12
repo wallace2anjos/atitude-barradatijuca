@@ -8,7 +8,26 @@ body {
   color: #fff;
   
 }
+.bod{
+  width:50px;
+  background-color:#fff;
+  border-radius:40px;
+  border: 1px solid #ccc;
+  transition: ease-in-out, transform 1s,box-shadow 1s;
+}
 
+.bod > .social{margin:0;}
+.bod > .social > a{
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+:hover.bod {
+  transform: translateZ(50px) translateX(5px) translateY(5px);
+  box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+}
 .mask {
   background-color: rgba(0, 0, 0, .3);
 }
