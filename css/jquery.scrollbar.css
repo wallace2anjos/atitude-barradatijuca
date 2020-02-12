@@ -279,9 +279,9 @@
 }
 .scrollbar-macosx:hover > .scroll-element .scroll-bar,
 .scrollbar-macosx > .scroll-element.scroll-draggable .scroll-bar {
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
 }
 
 
