@@ -8,24 +8,43 @@ body {
   color: #fff;
   
 }
+.pre-bod{
+  padding: 0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0;
+  margin: 0;
+}
+.bod > .social > a {
+    display: inline-block;
+    margin: 0px auto;
+    padding: 10px 40px;
+    text-align: center;
+}
 .bod{
-  width:50px;
-  background-color:#fff;
-  border-radius:40px;
-  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #1c1c1b;
+  border: 1px solid #222;
   transition: ease-in-out, transform 1s,box-shadow 1s;
 }
 
 .bod > .social{margin:0;}
-.bod > .social > a{
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
+.bod > .social > a {
+  display: inline-block;
+  margin: 0px auto;
+  padding: 10px 40px;
   text-align: center;
+  color: #ff7500;
+  transition: all linear 100ms;
+}
+.bod > .social > a:hover {
+  color: #ffffff;
 }
 
 :hover.bod {
-  transform: translateZ(50px) translateX(5px) translateY(5px);
+  transform: translateZ(50px) translateX(0px) translateY(0px);
   box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
 }
 .mask {
