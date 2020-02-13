@@ -24,21 +24,39 @@
     }
   .page-section{padding:0px;margin: 0;}
 </style>
-<iframe src="https://wallace2anjos.github.io/atitude-barradatijuca/" id="zino_iframe"></iframe>
+<button onclick="changeStuff()">Change Stuff</button>
+<iframe id="ifrm" src="https://wallace2anjos.github.io/atitude-barradatijuca/"></iframe>
+<a href="http://www.example.com/intro.html" target="ifrm">Introduction</a>
 <script type="text/javascript">
-  var zino_resize = function (event) {
-      if (event.origin !== "https://igrejabatistaatitude.com.br/") {
-          return;
-      }
-      var zino_iframe = document.getElementById('zino_iframe');
-      if (zino_iframe) {
-          zino_iframe.style.height = event.data + "px";
-      }
-  };
-  if (window.addEventListener) {
-      window.addEventListener("message", zino_resize, false);
-  } else if (window.attachEvent) {
-      window.attachEvent("onmessage", zino_resize);
-  }
-  </script>
+  // modified from same-domain version at www.dyn-web.com/tutorials/iframes/height/
+function setIframeHeightCO(id, ht) {
+    var ifrm = document.getElementById(id);
+    ifrm.style.visibility = 'hidden';
+    // some IE versions need a bit added or scrollbar appears
+    ifrm.style.height = ht + 4 + "px";
+    ifrm.style.visibility = 'visible';
+}
 
+
+// iframed document sends its height using postMessage
+function handleDocHeightMsg(e) {
+    // check origin
+    if ( e.origin === 'https://wallace2anjos.github.io' ) {
+        // parse data
+        var data = JSON.parse( e.data );
+        // check data object
+        if ( data['docHeight'] ) {
+            setIframeHeightCO( 'ifrm', data['docHeight'] );
+        } else if ( data['href'] ) { 
+            setIframe('ifrm', data['href'] );
+        }
+    }
+}
+
+// assign message handler
+if ( window.addEventListener ) {
+    window.addEventListener('message', handleDocHeightMsg, false);
+} else if ( window.attachEvent ) { // ie8
+    window.attachEvent('onmessage', handleDocHeightMsg);
+}
+</script>

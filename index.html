@@ -63,18 +63,7 @@
   &noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
-<!-- Cross domain iframe resize -->
-<script type="text/javascript">
-  function iframe_resize(){
-      var body = document.body,
-      html = document.documentElement,
-      height = Math.max(body.scrollHeight, body.offsetHeight, 
-    html.clientHeight, html.scrollHeight, html.offsetHeight);
-      if (parent.postMessage) {
-          parent.postMessage(height, "https://igrejabatistaatitude.com.br/");
-      }
-  }
-</script>
+
   
 </head>
 
@@ -479,28 +468,52 @@
     });
   </script>
   -->
-    <!--  SCRIPT Material Design Bootstrap  -->
-    <script src="js/addons/datatables-select.min.js"></script>
-    <script src="js/addons/datatables.min.js"></script>
-    <script src="js/addons/imagesloaded.pkgd.min.js"></script>
-    <script src="js/addons/jquery.zmd.hierarchical-display.min.js"></script>
-    <script src="js/addons/masonry.pkgd.min.js"></script>
-    <script src="js/addons/progressBar.min.js"></script>
-    <script src="js/addons/rating.min.js"></script>
-    <script src="js/addons-pro/chat.min.js"></script>
-    <script src="js/addons-pro/multi-range.min.js"></script>
-    <script src="js/addons-pro/stepper.min.js"></script>
-    <script src="js/addons-pro/steppers.min.js"></script>
-    <script src="js/addons-pro/timeline.min.js"></script>
+  <!--  SCRIPT Material Design Bootstrap  -->
+  <script src="js/addons/datatables-select.min.js"></script>
+  <script src="js/addons/datatables.min.js"></script>
+  <script src="js/addons/imagesloaded.pkgd.min.js"></script>
+  <script src="js/addons/jquery.zmd.hierarchical-display.min.js"></script>
+  <script src="js/addons/masonry.pkgd.min.js"></script>
+  <script src="js/addons/progressBar.min.js"></script>
+  <script src="js/addons/rating.min.js"></script>
+  <script src="js/addons-pro/chat.min.js"></script>
+  <script src="js/addons-pro/multi-range.min.js"></script>
+  <script src="js/addons-pro/stepper.min.js"></script>
+  <script src="js/addons-pro/steppers.min.js"></script>
+  <script src="js/addons-pro/timeline.min.js"></script>
+  <!--  SCRIPT capturando a altura  
+  <script>
+    var intElemScrollHeight = document.getElementById("bodyIfrmHeight").scrollHeight;
+    intElemScrollHeight.toString();
+    document.getElementById("storeBodyHeight").innerHTML = intElemScrollHeight;
+    console.log(intElemScrollHeight);
+  </script>
+  -->
+  <!-- Cross domain iframe resize -->
+  <script type="text/javascript">
+  // Get height of document
+function getDocHeight(doc) {
+    doc = doc || document;
+    // from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
+    var body = doc.body, html = doc.documentElement;
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+        html.clientHeight, html.scrollHeight, html.offsetHeight );
+    return height;
+}
 
-    <!--  SCRIPT capturando a altura  
-    <script>
-      var intElemScrollHeight = document.getElementById("bodyIfrmHeight").scrollHeight;
-      intElemScrollHeight.toString();
-      document.getElementById("storeBodyHeight").innerHTML = intElemScrollHeight;
-      console.log(intElemScrollHeight);
-    </script>
-    -->
+// send docHeight onload
+function sendDocHeightMsg(e) {
+    var ht = getDocHeight();
+    parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
+}
+
+// assign onload handler 
+if ( window.addEventListener ) {
+    window.addEventListener('load', sendDocHeightMsg, false);
+} else if ( window.attachEvent ) { // ie8
+    window.attachEvent('onload', sendDocHeightMsg);
+}
+  </script>
     
 </body>
 </html>
