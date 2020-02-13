@@ -25,22 +25,21 @@
     }
   .page-section{padding:0px;margin: 0;}
 </style>
-
 <iframe src="https://wallace2anjos.github.io/atitude-barradatijuca/" id="zino_iframe"></iframe>
 <script type="text/javascript">
-var zino_resize = function (event) {
-    //if (event.origin !== "https://remote-domain.com:8080") {
-        //return;
-   // }
-    var zino_iframe = document.getElementById('zino_iframe');
-    if (zino_iframe) {
-        zino_iframe.style.height = event.data + "px";
-    }
-};
-if (window.addEventListener) {
-    window.addEventListener("message", zino_resize, false);
-} else if (window.attachEvent) {
-    window.attachEvent("onmessage", zino_resize);
-}
-</script>
+  var zino_resize = function (event) {
+      if (event.origin !== "https://wallace2anjos.github.io/atitude-barradatijuca/") {
+          return;
+      }
+      var zino_iframe = document.getElementById('zino_iframe');
+      if (zino_iframe) {
+          zino_iframe.style.height = event.data + "px";
+      }
+  };
+  if (window.addEventListener) {
+      window.addEventListener("message", zino_resize, false);
+  } else if (window.attachEvent) {
+      window.attachEvent("onmessage", zino_resize);
+  }
+  </script>
 
