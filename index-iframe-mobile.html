@@ -1,22 +1,28 @@
 <style>
 html, body{
-background: #1c1c1b;
-padding:0px;
-margin:0px;
+    background: #1c1c1b;
+    padding:0px;
+    margin:0px;
 }
-
+    iframe#ifrm{
+    border:0px solid red;
+    /* overflow: hidden;*/
+    }
+    iframe#ifrm html{
+    /* overflow: hidden;*/
+    }
 .page-section{padding:0px;margin: 0;}
 </style>
 <iframe id="ifrm" src="https://wallace2anjos.github.io/atitude-barradatijuca/"></iframe>
 <script type="text/javascript">
-  // modified from same-domain version at www.dyn-web.com/tutorials/iframes/height/
+// modified from same-domain version at www.dyn-web.com/tutorials/iframes/height/
 function setIframeHeightCO(id, ht) {
     var ifrm = document.getElementById(id);
-    //ifrm.style.visibility = 'hidden';
+    ifrm.style.visibility = 'hidden';
     // some IE versions need a bit added or scrollbar appears
-    ifrm.style.height = ht - 100 + "px";
+    ifrm.style.height = ht + 4 + "px";
+    ifrm.style.width = '100%';
     ifrm.style.visibility = 'visible';
-    ifrm.style.border = '0';
 }
 
 // iframed document sends its height using postMessage
